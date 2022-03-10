@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dashboard MELI Proxy</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.3.0/Chart.min.js"></script>
+  
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  
+    <div class="wrapper">
+        <button id="btn-refresh">Refresh</button>       
+        
+        <table>
+            <tr>
+              <td>
+                <div >
+                    <h1>Resources consumed Top</h1>
+                    <h2>Number of top ten resources requested Today</h2>
+              
+                    <canvas id="topResource" width="600" height="400"></canvas>
+                </div>
+              </td>
+
+              <td>
+                <div >
+                    <h1>IP consumed Top</h1>
+                    <h2>Number of top ten Ips requested Today</h2>
+              
+                    <canvas id="topIp" width="600" height="400"></canvas>
+                </div>
+              </td>
+
+            </tr>
+            <tr>
+              <td colspan="2">
+                <div >
+                    <h1>Resources last day</h1>
+                    <h2>Number of request  by resources Today every hour</h2>
+                    <canvas id="dataResource" width="1200" height="800"></canvas>
+                </div>
+              </td>
+           
+            </tr>
+          </table>
+    </div>
+</body>
+<script src="https://code.jscharting.com/2.9.0/jscharting.js"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+<script src="js/index.js"></script>
+</html>
